@@ -1,0 +1,57 @@
+			PORTUGOL
+programa NumPares;
+var
+	i=inteiro
+Início
+	enquanto (i <- 501) faca
+	se (i % 2 = 0) entao
+	escreva (i, "")
+	fim_enquanto
+     fim_se
+Fim.
+	
+
+
+		 		JAVA
+package prjLista3;
+
+import java.util.Scanner;
+
+public class NumPares {
+	public static void main(String[] args) {
+		for (int i = 1; i<=500; i++){
+		if (i % 2 == 0){
+		System.out.println(i+ " ");
+	}
+
+
+
+
+	CORRECAO
+programa NumPares;
+var
+    i: inteiro
+inicio
+    para i de 1 ate 500 passo 1 faca
+        se (i % 2 = 0) entao
+            escreva(i, " ")
+        fim_se
+    fim_para
+fim.
+
+
+
+
+JAVA
+package prjLista3;
+
+public class NumPares {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 500; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " "); // imprime na mesma linha
+            }
+        }
+    }
+}
+
