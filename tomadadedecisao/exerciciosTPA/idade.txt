@@ -1,0 +1,110 @@
+EXERCICIO 1. IDADE
+					PORTUGOL
+programa Idade
+		var
+		pessoa1, pessoa2 = caractere
+		idade1, idade2 = real
+Início
+		escreva("Digite o nome da 1ª pessoa:")
+		leia (pessoa1)
+
+		escreva("Digite a idade da 1ª pessoa:")
+		leia (idade1)
+
+		escreva("Digite o nome da 2ª pessoa:")
+		leia (pessoa2)
+
+		escreva("Digite a idade da 2ª pessoa:")
+		leia (idade2)
+
+		se (idade1> idade2) entao
+		   escreva ("Mais velha:"+ pessoa1 + idade1)
+		   escreva ("Mais nova': +pessoa2 + idade2)
+	        senão
+
+		  se (idade1<idade2) entao
+		     escreva ("Mais velha:"+ pessoa2 + idade2)
+		     escreva ("Mais nova': +pessoa1 + idade1) 
+	  	  senão
+
+		   escreva ("Ambos tem a mesma idade")
+		 fimse
+	     fimse
+Fim
+
+
+
+
+			ALGORITMO DE TOMADA DE DECISÃO
+	ALGORITMO DA IDADE
+1-Leia o nome da pessoa 1 (pessoa1)
+2-Leia a idade 1 (idade1)
+3-Leia o nome da pessoa 2 (pessoa 2)
+4-Leia a idade 2 (idade2)
+5- Se (idade1 > idade2) então
+  6-Escreva ("Mais velho:" + pessoa1, +idade1 e "Mais novo": +pessoa2, +idade2)
+7- Senão
+8- Se (idade1<idade2) então
+   9-Escreva ("Mais velho:" + pessoa2, +idade2 e "Mais novo": +pessoa1, +idade1)
+10- Senão
+   11- Escreva ("Ambos tem a mesma idade")
+
+
+			JAVA
+				IDADE
+package CalcularIdade
+import java.util.Scanner;
+
+public class Idade{
+ public static void main (String []args){
+    Scanner in=new Scanner(System.in);
+
+	String pessoa1, pessoa2;
+	int idade1, idade2;
+	
+	System.out.println("Digite o nome da 1ª pessoa:");
+	pessoa1 = in.nextInt();
+
+	System.out.println("Digite a idade da 1ª pessoa:");
+	idade1 = in.nextInt();
+
+
+	System.out.println("Digite o nome da 2ª pessoa:");
+	pessoa2 = in.nextInt();
+
+	System.out.println("Digite o nome da 2ª pessoa:");
+	pessoa2 = in.nextInt();
+	
+	if(idade1 > idade2) {
+	System.out.println ("Mais velha" + pessoa1 + idade1)
+	System.out.println ("Mais nova" + pessoa2 + idade2)
+
+	}else if (idade1 < idade2) {
+	System.out.println ("Mais velha" + pessoa2 + idade2)
+	System.out.println ("Mais nova" + pessoa1 + idade1);
+
+	}else{ 
+	System.out.println(" Ambos tem a mesma idade")
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		  
+		

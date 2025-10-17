@@ -1,0 +1,73 @@
+		ALGORITMO SALÁRIO
+1.Leia o salário (salario)
+2.Leia o valor do Salário minimo (salarioMin)
+3.Se (salario > salarioMin) entao
+4.Calcule a diferenca (diferenca< salario - salarioMin)
+  5-Escreva ("A pessoa recebe um valor acima do salário mínimo, diferença de:" +diferenca)
+    7- Senão
+    8-.Se (salario < salarioMin) entao
+9.Calcule a diferenca (diferenca< salarioMin - salario)
+  10-Escreva ("A pessoa recebe um valor abaixo do salário mínimo, diferença de:" +diferenca)
+	11- Senão
+	12- Escreva ("A pessoa recebe um valor igual ao de um salário mínimo")
+
+
+		   PORTUGOL
+programa SALARIO
+
+	var 
+ 	   salario, salarioMin, diferenca = real
+
+Início
+	escreva("Digite o valor do salário:")
+	leia (salario)
+	
+	escreva("Digite o valor do salário mínimo:")
+	leia (salarioMin)
+	
+	se (salario > salarioMin) entao
+	  diferenca <- salario - salarioMin
+	  escreva ("A pessoa recebe um valor acima do salário mínimo, diferença de:" +diferenca)
+    	senao
+	  
+	    se (salario< salarioMin) entao
+	         diferenca <- salarioMin - salario)
+	          escreva ("A pessoa recebe um valor abaixo do salário mínimo, diferença de:" +diferenca)
+      senao
+	        escreva ("A pessoa recebe um valor igual do salário mínimo")
+            fimse
+	fimse
+Fim
+	
+
+
+
+			JAVA
+
+package CalcularSalario;
+import java.util.Scanner;
+
+public class Salario {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double salario, salarioMin, diferenca;
+
+        System.out.println("Digite o valor do salário:");
+        salario = in.nextDouble();
+
+        System.out.println("Digite o valor do salário mínimo:");
+        salarioMin = in.nextDouble();
+
+        if (salario > salarioMin) {
+            diferenca = salario - salarioMin;
+            System.out.println("A pessoa recebe um valor acima do salário mínimo, diferença de: " + diferenca);
+        } else if (salario < salarioMin) {
+            diferenca = salarioMin - salario;
+            System.out.println("A pessoa recebe um valor abaixo do salário mínimo, diferença de: " + diferenca);
+        } else {
+            System.out.println("A pessoa recebe um valor igual ao do salário mínimo");
+        }
+	  in.close();
+    }
+}

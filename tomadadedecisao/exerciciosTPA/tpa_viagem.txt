@@ -1,0 +1,151 @@
+		algoritmo 1 VIAGEM
+1-Leia o valor de dinheiro em reais (reais)
+2-Leia o destino da viagem (destino)
+  3-Se (destino = "nacional") então
+   4-Escreva("Sua quantia de dinheiro em reais é de: ", reais)
+5-Senão
+    6-Se (destino = "europeia") então
+     7-Calcule euros ← reais * 0,16
+8-Escreva("Sua quantia de dinheiro em euros é de: ", euros)
+9-Senão
+10-Se (destino = "norte-americana") então
+11-Calcule dolares ← reais * 0,18
+12-Escreva("Sua quantia de dinheiro em dólares é de: ", dolares)
+13-Senão
+14-Se (destino = "sul-americana") então
+15-Calcule pesosArgentinos ← reais * 239,91
+16-Escreva("Sua quantia de dinheiro em pesos argentinos é de: ", pesosArgentinos)
+
+
+
+
+		ALGORITMO VIAGEM
+1-Leia o valor de dinheiro em reais (reais)
+2-Leia o destino da viagem (destino)
+3-Se (destino = "nacional") então
+	4-Escreva("Sua quantia de dinheiro em reais é de: ", reais)
+5-Senão
+    6-Se (destino = "europeia") então
+        7-Calcule euros ← reais * 0,16
+        8-Escreva("Sua quantia de dinheiro em euros é de: ", euros)
+    9-Senão
+        10-Se (destino = "norte-americana") então
+            11-Calcule dolares ← reais * 0,18
+            12-Escreva("Sua quantia de dinheiro em dólares é de: ", dolares)
+        13-Senão
+            14-Se (destino = "sul-americana") então
+                15-Calcule pesosArgentinos ← reais * 239,91
+                16-Escreva("Sua quantia de dinheiro em pesos argentinos é de: ", pesosArgentinos)
+
+
+		PORTUGOL
+incompleto
+
+programa
+{
+    real reais, euros, dolares, pesosArgentinos
+    caractere destino
+
+    escreva("Digite o valor em reais: ")
+    leia(reais)
+    escreva("Digite o destino da viagem (nacional, europeia, norte-americana, sul-americana): ")
+    leia(destino)
+
+    se destino = "nacional" entao
+        escreva("Sua quantia de dinheiro em reais é de: ", reais)
+    senao
+        se destino = "europeia" entao
+            euros <- reais * 0.16
+            escreva("Sua quantia de dinheiro em euros é de: ", euros)
+        senao
+            se destino = "norte-americana" entao
+                dolares <- reais * 0.18
+                escreva("Sua quantia de dinheiro em dólares é de: ", dolares)
+            senao
+                se destino = "sul-americana" entao
+                    pesosArgentinos <- reais * 239.91
+                    escreva("Sua quantia de dinheiro em pesos argentinos é de: ", pesosArgentinos)
+                fimse
+            fimse
+        fimse
+    fimse
+}
+
+
+
+
+			JAVA
+
+package Viage,;
+import java.util.Scanner;
+
+public class viagem{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+	double= real, dolares, euros, pesosArgentinos;
+	String = destino, nacional, sul-Americano, norte-Americano, europeia;
+
+	System.out.println("Digite a quantia em dinheiro:");
+	real = in.nextDouble();
+
+	if (destino=="nacional"){
+	System.out.println("Sua quantia de dinheiro em reais é de: ", reais){
+
+	}else if (destino=="europeia"){
+	euro<- real* 0.16
+	System.out.println("Sua quantia de dinheiro em euros é de: ", euros){
+
+	}else if (destino=="norte-Americano"){
+	dolares<-real*0.18
+	System.out.println("Sua quantia de dinheiro em dolares é de: ", dolares){
+
+	}else if (destino=="sul-Americano"){
+	pesosArgentinos<-real * 239.91
+	System.out.println("Sua quantia de dinheiro em pesos argentinos é de: ", pesosArgentinos){
+ }
+        in.close();
+       }
+      }
+     }
+
+
+JAVA CHAT
+ackage viagem;
+
+import java.util.Scanner;
+
+public class Viagem {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double reais, dolares, euros, pesosArgentinos;
+        String destino;
+
+        System.out.println("Digite a quantia em dinheiro (em reais):");
+        reais = in.nextDouble();
+
+        // Consumir quebra de linha deixada pelo nextDouble
+        in.nextLine();
+
+        System.out.println("Digite o destino (nacional, europeia, norte-americano, sul-americano):");
+        destino = in.nextLine().toLowerCase();
+
+        if (destino.equals("nacional")) {
+            System.out.println("Sua quantia de dinheiro em reais é de: " + reais);
+        } else if (destino.equals("europeia")) {
+            euros = reais * 0.16;
+            System.out.println("Sua quantia de dinheiro em euros é de: " + euros);
+        } else if (destino.equals("norte-americano")) {
+            dolares = reais * 0.18;
+            System.out.println("Sua quantia de dinheiro em dólares é de: " + dolares);
+        } else if (destino.equals("sul-americano")) {
+            pesosArgentinos = reais * 239.91;
+            System.out.println("Sua quantia de dinheiro em pesos argentinos é de: " + pesosArgentinos);
+        } else {
+            System.out.println("Destino inválido!");
+        }
+
+        in.close();
+    }
+
